@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <attr name="colorVariant" format="reference"/>
+    <attr name="colorVariantX" format="reference"/>
+    <attr name="colorVariantOp" format="reference"/>
+    <attr name="colorVariantXOp" format="reference"/>
+    <attr name="colorThemeBackground" format="reference"/>
+    <attr name="colorTextDark" format="reference"/>
+    <attr name="colorTextMain" format="reference"/>
+    <attr name="colorTextSecondary" format="reference"/>
+    <attr name="colorIconNormal" format="reference"/>
+    <attr name="colorIconActive" format="reference"/>
+    <attr name="colorButtonTint" format="reference"/>
+
+</resources>

@@ -1,0 +1,44 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Aikon" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/colorBlack</item>
+        <item name="colorPrimaryVariant">@color/colorBlack</item>
+        <item name="colorOnPrimary">@color/colorBlack</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/colorBlack</item>
+        <item name="colorSecondaryVariant">@color/colorBlack</item>
+        <item name="colorOnSecondary">@color/colorBlack</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <item name="android:navigationBarColor">?attr/colorPrimaryVariant</item>
+
+        <!-- active thumb & track color (30% transparency) -->
+        <item name="colorControlActivated">@color/colorWhite</item>
+        <!-- inactive thumb color -->
+        <item name="colorSwitchThumbNormal">@color/colorBlack</item>
+
+        <!-- Customize your theme here. -->
+        <item name="colorVariant">@color/colorBlackLight</item>
+        <item name="colorVariantX">@color/colorBlackLightX</item>
+        <item name="colorVariantOp">@color/colorWhiteDark</item>
+        <item name="colorVariantXOp">@color/colorWhiteDarkX</item>
+        <item name="colorThemeBackground">@color/colorBlack</item>
+        <item name="colorTextDark">@color/colorWhite</item>
+        <item name="colorTextMain">@color/colorWhite</item>
+        <item name="colorTextSecondary">@color/colorBlack</item>
+        <item name="colorIconNormal">@color/colorWhite</item>
+        <item name="colorIconActive">@color/colorWhite</item>
+        <item name="colorButtonTint">@color/colorWhite</item>
+
+        <item name="android:windowBackground">@color/colorBlack</item>
+
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+
+        <item name="drawerArrowStyle">@style/Theme.Aikon.DrawerIconStyle</item>
+
+        <item name="materialAlertDialogTheme">@style/Theme.Aikon.AlertDialogMaterialTheme</item>
+        <!--<item name="textInputStyle">@style/Theme.Aikon.TextInputLayout</item>-->
+    </style>
+</resources>

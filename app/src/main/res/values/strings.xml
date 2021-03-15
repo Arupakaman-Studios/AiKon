@@ -1,0 +1,112 @@
+<resources>
+
+    <string name="app_name" translatable="false">AiKon</string>
+
+    <!-- Non Translatable -->
+
+    <string name="title_kurosaki_ichigo" translatable="false">黒崎 一護</string>
+
+    <string name="default_notification_channel_id" translatable="false">AiKon_Notification_Channel</string>
+    <string name="notification_channel_name" translatable="false">AiKon_Notification_Preview</string>
+
+    <string name="email_publisher" translatable="false">arupakamanstudios@gmail.com</string>
+    <string name="donate_version_pkg_name" translatable="false">com.arupakaman.aikon.donate</string>
+
+    <string name="key_ad_mob_app_id" translatable="false">ca-app-pub-7574266774319612~6226903327</string>
+    <string name="key_ad_mob_banner_home_unit_id" translatable="false">ca-app-pub-7574266774319612/6833407983</string>
+    <string name="key_ad_mob_interstitial_home_unit_id" translatable="false">ca-app-pub-7574266774319612/6517713210</string>
+
+
+    <string name="english" translatable="false">English</string>
+    <string name="japanese" translatable="false">日本語</string>
+    <string name="korean" translatable="false">한국어</string>
+    <string name="hindi" translatable="false">हिन्दी</string>
+    <string name="russian" translatable="false">Русский</string>
+    <string name="spanish" translatable="false">Espagnol</string>
+    <string name="french" translatable="false">Français</string>
+    <string name="chinese" translatable="false">中国</string>
+
+    <string name="english_code" translatable="false">en</string>
+    <string name="japanese_code" translatable="false">ja</string>
+    <string name="korean_code" translatable="false">ko</string>
+    <string name="hindi_code" translatable="false">hi</string>
+    <string name="russian_code" translatable="false">ru</string>
+    <string name="spanish_code" translatable="false">es</string>
+    <string name="french_code" translatable="false">fr</string>
+    <string name="chinese_code" translatable="false">zh</string>
+
+
+    <!-- Titles -->
+    <string name="title_settings">Settings</string>
+    <string name="title_about_us">About Us</string>
+    <string name="title_share_aikon">Share AiKon</string>
+    <string name="title_rate_aikon">Rate AiKon</string>
+    <string name="title_contact_us">Contact Us</string>
+    <string name="title_drawer_open">Open Drawer</string>
+    <string name="title_drawer_close">Close Drawer</string>
+    <string name="title_app_icon_preview">App Icon Preview</string>
+    <string name="title_notification_icon_preview">Notification Icon Preview</string>
+    <string name="title_adaptive_icon">Adaptive Icon</string>
+    <string name="title_get_donation_version">Get Donation (Ad-Free) Version</string>
+    <string name="title_padding">Padding</string>
+    <string name="title_select_icon_background">Select Icon Background</string>
+    <string name="title_default">Default</string>
+    <string name="title_gallery">Gallery</string>
+    <string name="title_color">Color</string>
+    <string name="title_select_icon_background_color">Select Icon Background Color :</string>
+    <string name="title_remove_notification_on_exit">Remove Notification on Exit</string>
+    <string name="title_more_apps">More Apps by Arupakaman Studios</string>
+    <string name="title_personalization">Personalization</string>
+    <string name="title_theme">Theme</string>
+    <string name="title_system">System</string>
+    <string name="title_light">Light</string>
+    <string name="title_dark">Dark</string>
+    <string name="title_change_language">Change language</string>
+    <string name="title_select_language_colon">Select language : </string>
+    <string name="title_share_via">Share via :</string>
+    <string name="title_send_via">Send via :</string>
+    <string name="title_not_working">AiKon Not Working?</string>
+
+    <!-- Actions -->
+    <string name="action_preview_app_icon">App Icon Preview</string>
+    <string name="action_preview_app_notification_icon">App Notification Icon Preview</string>
+    <string name="action_select">Select</string>
+    <string name="action_cancel">Cancel</string>
+    <string name="action_write_device_info_in_mail">Write Device Info In Mail</string>
+
+    <!-- Hints -->
+    <string name="hint_enter_app_name">Enter App Name</string>
+
+    <!-- Messages -->
+    <string name="msg_tap_to_pick_icon">Tap on the above icon to select an icon from gallery</string>
+    <string name="msg_app_icon_tooltip">Always select an image with a resolution of 512x512 pixels for best results.</string>
+    <string name="msg_select_app_icon_background_from">Select Icon Background from :</string>
+    <string name="msg_notification_preview">This notification preview is created by AiKon. Tap to remove this notification.</string>
+    <string name="msg_notification_created">Notification created</string>
+    <string name="msg_about_app">AiKon is an app made specially for Android developers as well as UI/UX designers. Get a preview of how your icon will look like in the device launcher as well as in the notification area. You can also customize the icon size and it\'s background.</string>
+    <string name="msg_about_us">AiKon is developed by Naresh Nath of Arupakaman Studios. Arupakaman Studios is a group of independent developers working on various applications and services. \nYou can send us your feedback and app suggestions via email.</string>
+    <string name="msg_share_aikon_app">Hey, \nWith AiKon you can get a preview of how your icon will look like in the device launcher as well as in the notification area. Get it from : \n</string>
+    <string name="msg_enter_your_message">Enter your message here…</string>
+    <string name="msg_app_dedicated">This app is dedicated to Kurosaki Ichigo</string>
+    <string name="msg_not_working">AiKon is an experimental project and it may not work properly in every device. If AiKon is not working as expected on your device please share some information (model, android version, etc.) about your device to us so that we can improve AiKon.</string>
+    <string name="msg_device_info_start">Bellow are your device information which will be shared with us to improve AiKon :</string>
+
+    <!-- Error Messages -->
+    <string name="err_msg_general">Something went wrong!</string>
+    <string name="err_msg_app_icon_device_support">Device Does Not Support\nApp Icon Preview</string>
+    <string name="err_msg_notification_icon_device_support">Device Does Not Support\nNotification Icon Preview</string>
+    <string name="err_msg_not_icon_selected">No icon selected!</string>
+    <string name="err_msg_not_icon_bg_selected">No background selected!</string>
+    <string name="err_msg_enter_app_name">Enter app name!</string>
+
+    <!-- Description -->
+    <string name="desc_current_language_colon">Current language : </string>
+
+    <!-- Content Description -->
+    <string name="cont_desc_pick_app_icon">Click to pick an app icon</string>
+    <string name="cont_desc_app_icon_bg">App icon background</string>
+    <string name="cont_desc_adjust_app_icon_padding">Slider to adjust app icon padding</string>
+    <string name="cont_desc_aikon_app_logo">AiKon Logo</string>
+
+
+</resources>

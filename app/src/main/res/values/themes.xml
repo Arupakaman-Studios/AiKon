@@ -1,0 +1,49 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Aikon" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/colorWhite</item>
+        <item name="colorPrimaryVariant">@color/colorWhite</item>
+        <item name="colorOnPrimary">@color/colorWhite</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/colorWhite</item>
+        <item name="colorSecondaryVariant">@color/colorWhite</item>
+        <item name="colorOnSecondary">@color/colorWhite</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">true</item>
+        <item name="android:navigationBarColor">?attr/colorPrimaryVariant</item>
+
+        <!-- active thumb & track color (30% transparency) -->
+        <item name="colorControlActivated">@color/colorBlack</item>
+        <!-- inactive thumb color -->
+        <item name="colorSwitchThumbNormal">@color/colorWhite</item>
+
+        <!-- Customize your theme here. -->
+        <item name="colorVariant">@color/colorWhiteDark</item>
+        <item name="colorVariantX">@color/colorWhiteDarkX</item>
+        <item name="colorVariantOp">@color/colorBlackLight</item>
+        <item name="colorVariantXOp">@color/colorBlackLightX</item>
+        <item name="colorThemeBackground">@color/colorWhite</item>
+        <item name="colorTextDark">@color/colorBlack</item>
+        <item name="colorTextMain">@color/colorBlack</item>
+        <item name="colorTextSecondary">@color/colorWhite</item>
+        <item name="colorIconNormal">@color/colorBlack</item>
+        <item name="colorIconActive">@color/colorBlack</item>
+        <item name="colorButtonTint">@color/colorBlack</item>
+
+        <item name="android:windowBackground">@color/colorWhite</item>
+
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+
+        <item name="drawerArrowStyle">@style/Theme.Aikon.DrawerIconStyle</item>
+
+        <item name="materialAlertDialogTheme">@style/Theme.Aikon.AlertDialogMaterialTheme</item>
+
+        <!--        <item name="textInputStyle">@style/Theme.Aikon.TextInputLayout</item>-->
+    </style>
+
+
+
+</resources>

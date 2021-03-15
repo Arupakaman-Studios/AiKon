@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.appbar.AppBarLayout android:id="@+id/appBar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:elevation="0dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:layout_scrollFlags="scroll|enterAlways"
+        android:elevation="0dp"
+        app:contentInsetStartWithNavigation="0dp"
+        app:titleMarginStart="0dp"
+        app:navigationIcon="@drawable/ic_back"
+        app:titleTextColor="?colorTextDark"
+        app:navigationIconTint="?colorTextDark"
+        android:background="?colorThemeBackground"
+        >
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/tvToolbarTitle"
+            tools:text="@string/app_name"
+            android:textColor="?colorTextDark"
+            style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+            android:gravity="center"
+            android:layout_marginEnd="?attr/actionBarSize"
+            android:textStyle="italic"
+            />
+    </com.google.android.material.appbar.MaterialToolbar>
+</com.google.android.material.appbar.AppBarLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".uiModules.home.ActivityHome"
+    >
+
+    <include
+        layout="@layout/bar_appbar_layout"
+        android:id="@+id/appBarInclude"
+        />
+
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/appBarInclude"
+        app:layout_constraintTop_toBottomOf="@id/appBarInclude"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/drawerLayoutHome">
+        <androidx.viewpager2.widget.ViewPager2
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/viewPager"
+            />
+        <com.google.android.material.navigation.NavigationView
+            android:id="@+id/navigationView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            style="@style/Theme.Aikon.NavigationView"
+            android:clipToPadding="false"
+            android:fitsSystemWindows="true"
+            app:menu="@menu/menu_home_navigation">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvNavHomeVersion"
+                android:textColor="?colorTextMain"
+                android:textSize="10sp"
+                android:layout_gravity="bottom"
+                android:gravity="center"
+                android:paddingVertical="10dp"
+                android:layout_marginTop="5dp"
+                />
+        </com.google.android.material.navigation.NavigationView>
+    </androidx.drawerlayout.widget.DrawerLayout>
+</RelativeLayout>

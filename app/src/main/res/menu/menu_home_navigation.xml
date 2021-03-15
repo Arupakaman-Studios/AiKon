@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navItemSettings"
+        android:title="@string/title_settings"
+        />
+
+    <item
+        android:id="@+id/navItemAbout"
+        android:title="@string/title_about_us"
+        />
+
+    <item
+        android:id="@+id/navItemContact"
+        android:title="@string/title_contact_us"
+        />
+
+    <item
+        android:id="@+id/navItemNotWorking"
+        android:title="@string/title_not_working"
+        />
+
+    <item
+        android:id="@+id/navItemShare"
+        android:title="@string/title_share_aikon"
+        />
+
+    <item
+        android:id="@+id/navItemRate"
+        android:title="@string/title_rate_aikon"
+        />
+
+    <item
+        android:id="@+id/navItemDonateApp"
+        android:title="@string/title_get_donation_version"
+        />
+
+    <item
+        android:id="@+id/navItemMoreApps"
+        android:title="@string/title_more_apps"
+        />
+
+</menu>
