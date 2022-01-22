@@ -23,7 +23,9 @@
             android:screenOrientation="portrait"/>
 
         <activity android:name=".uiModules.home.ActivityHome"
-            android:screenOrientation="portrait">
+            android:screenOrientation="portrait"
+            android:exported="true"
+            >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

@@ -134,9 +134,17 @@ class ForegroundService : Service() {
             val stopIntent = Intent(this, ForegroundService::class.java)
             stopIntent.action = ACTION_STOP
             val pendingStopIntent = if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-                PendingIntent.getForegroundService(this, 0, stopIntent, 0)
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
+                    PendingIntent.getForegroundService(this, 0, stopIntent, PendingIntent.FLAG_IMMUTABLE or 0)
+                } else {
+                    PendingIntent.getForegroundService(this, 0, stopIntent, 0)
+                }
             } else {
-                PendingIntent.getService(this, 0, stopIntent, 0)
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
+                    PendingIntent.getService(this, 0, stopIntent, PendingIntent.FLAG_IMMUTABLE or 0)
+                } else {
+                    PendingIntent.getService(this, 0, stopIntent, 0)
+                }
             }
 
             val notification = getNotificationBuilder()

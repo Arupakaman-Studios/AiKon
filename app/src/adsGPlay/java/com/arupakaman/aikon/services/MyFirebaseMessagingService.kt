@@ -26,8 +26,9 @@ class MyFirebaseMessagingService: FirebaseMessagingService() {
     private fun getNewNotificationId() = c.incrementAndGet()
 
     private fun getNotificationIcon(): Int {
-        val useWhiteIcon = Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP
-        return if (useWhiteIcon) R.drawable.baseline_check_24 else R.mipmap.ic_launcher
+        /*val useWhiteIcon = Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP
+        return if (useWhiteIcon) R.drawable.baseline_check_24 else R.mipmap.ic_launcher*/
+        return R.drawable.baseline_check_24
     }
 
     override fun onCreate() {
@@ -85,10 +86,11 @@ class MyFirebaseMessagingService: FirebaseMessagingService() {
         }
 
         val intent = Intent(Intent.ACTION_VIEW, Uri.parse(url))
-        val pendingIntent = PendingIntent.getActivity(
-            this, 0, intent,
-            PendingIntent.FLAG_ONE_SHOT
-        )
+        val pendingIntent = if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
+            PendingIntent.getActivity(this, 0, intent, PendingIntent.FLAG_IMMUTABLE or PendingIntent.FLAG_ONE_SHOT)
+        } else {
+            PendingIntent.getActivity(this, 0, intent, PendingIntent.FLAG_ONE_SHOT)
+        }
 
         val defaultSoundUri = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION)
         val notificationBuilder = NotificationCompat.Builder(this, channelId)
@@ -101,8 +103,7 @@ class MyFirebaseMessagingService: FirebaseMessagingService() {
             .setChannelId(channelId)
             .setContentIntent(pendingIntent)
 
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP)
-            notificationBuilder.color = ContextCompat.getColor(baseContext, R.color.colorBlack)
+        notificationBuilder.color = ContextCompat.getColor(baseContext, R.color.colorBlack)
 
 
         //initiate notification sending
