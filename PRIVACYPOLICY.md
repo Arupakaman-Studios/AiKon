@@ -1,4 +1,4 @@
-**Privacy Policy**
+**Privacy Policy (For app downloaded from (source) Google Play Store)**
 
 Arupakaman Studios built the AiKon app as an Open Source app. This SERVICE is provided by Arupakaman Studios at no cost and is intended for use as is.
 
